@@ -49,15 +49,15 @@
             <div class="content flex col">
                 <p>We help <span class="special">undergraduates</span> discover themselves using a Personalized
                     self-assessment test</p>
-                <button>Get Started</button>
+                <a href="/registration"><button>Get Started</button></a>
             </div>
             <img src="{{ asset('template/assets/img/startup.svg') }}" alt="photo_illustration" class="illustration">
-            <div class="slide flex row">
+            {{-- <div class="slide flex row">
                 <div class="current"></div>
                 <div></div>
                 <div></div>
                 <div></div>
-            </div>
+            </div> --}}
         </main>
     </div>
     <section class="section-one mission flex col">

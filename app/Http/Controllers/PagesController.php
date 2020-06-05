@@ -36,7 +36,7 @@ class PagesController extends Controller
     {
         return view('template.faqs');
     }
-    public function pay()
+    public function register()
     {
         return view('template.payment');
     }
