@@ -56,7 +56,7 @@
                                 </li>
                                 <!-- This Should Contain a PDF link About Efico  -->
                                 <li class="nav-item">
-                                    <a class="nav-link" href="faqs.html">Learn More</a>
+                                    <a class="nav-link" href="/faqs">Learn More</a>
                                 </li>
                             </ul>
                         </div>
@@ -279,17 +279,17 @@
                         <h4>Newsletter</h4>
                         <p>Subscribe to Our Newsletter to keep you Updated</p>
                         <div id="mc_embed_signup">
-                            <form target="_blank"
-                                action="#"
-                                method="get" class="subscribe_form relative mail_part" required>
-                                <input type="email" name="email" id="newsletter-form-email" placeholder="Email Address"
-                                    class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
-                                    onblur="this.placeholder = ' Email Address '" required="" type="email">
-                                <button type="submit" name="submit" id="newsletter-submit"
-                                    class="email_icon newsletter-submit button-contactForm"><i
+                            <form action="/subscribe" method="POST" class="subscribe_form relative mail_part">
+                                @csrf
+                                <input type="email" name="email" placeholder="Email Address"
+                                    class="placeholder hide-on-focus" required="">
+                                <button type="submit" class="email_icon newsletter-submit button-contactForm"><i
                                         class="far fa-paper-plane"></i></button>
                                 <div class="mt-10 info"></div>
                             </form>
+                            @if($success ?? '')
+                                {{ $success }}
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -341,11 +341,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="{{ asset('template/js/waypoints.min.js') }}"></script>
     <script src="{{ asset('template/js/countdown.jquery.min.js') }}"></script>
     <!-- contact js -->
-    <script src="{{ asset('template/js/jquery.ajaxchimp.min.js') }}"></script>
+    {{-- <script src="{{ asset('template/js/jquery.ajaxchimp.min.js') }}"></script>
     <script src="{{ asset('template/js/jquery.form.js') }}"></script>
     <script src="{{ asset('template/js/jquery.validate.min.js') }}"></script>
     <script src="{{ asset('template/js/mail-script.js') }}"></script>
-    <script src="{{ asset('template/js/contact.js') }}"></script>
+    <script src="{{ asset('template/js/contact.js') }}"></script> --}}
     <!-- custom js -->
     <script src="{{ asset('template/js/custom.js') }}"></script>
 </body>

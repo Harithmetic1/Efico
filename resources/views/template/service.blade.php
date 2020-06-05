@@ -25,7 +25,7 @@
               <a class="nav-item nav-link" href="/contact">CONTACT US</a>
               <a class="nav-item nav-link active" href="/services">SERVICES<span class="sr-only">(current)</span></a>
               <a class="nav-item nav-link" href="/news">NEWS </a>
-              <a class="nav-item nav-link" href="faqs.html">FAQS</a>
+              <a class="nav-item nav-link" href="/faqs">FAQS</a>
             </div>
             </ul>
       </nav>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="faqs/style.css">
+    <link rel="stylesheet" href="{{ asset('template/faqs/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -13,7 +13,7 @@
 <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: #3c185b; width: 100%; margin-left: 0; color: white;" >
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="/">
         <img src="logo.png" width="70" height="30"  alt="" loading="lazy">
         </a>
         <button class="navbar-toggler" style="color: white; width: auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,12 +22,12 @@
         <div class="collapse navbar-collapse up" id="navbarSupportedContent" >
           <ul class="navbar-nav mr-auto">
           <div class="navbar-nav ">
-              <a class="nav-item nav-link" href="index.html">HOME</a>
-              <a class="nav-item nav-link" href="./About.html">ABOUT US</a>
-              <a class="nav-item nav-link" href="contact.html">CONTACT US</a>
-              <a class="nav-item nav-link" href="service.html">SERVICES</a>
-              <a class="nav-item nav-link" href="news.html">NEWS </a>
-              <a class="nav-item nav-link active" href="faqs.html">FAQS <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="/">HOME</a>
+              <a class="nav-item nav-link" href="/about">ABOUT US</a>
+              <a class="nav-item nav-link" href="/contact">CONTACT US</a>
+              <a class="nav-item nav-link" href="/services">SERVICES</a>
+              <a class="nav-item nav-link" href="/news">NEWS </a>
+              <a class="nav-item nav-link active" href="/faqs">FAQS <span class="sr-only">(current)</span></a>
             </div>
             </ul>
       </nav>
@@ -126,8 +126,8 @@
   <div class="row ">
       <div class="col">
           <p><Strong>QUICK LINKS</Strong></p>
-          <a href="#" class="text-light">About Us</a> <br>
-          <a href="#" class="text-light">Newsletter</a>
+          <a href="/about" class="text-light">About Us</a> <br>
+          <a href="/news" class="text-light">Newsletter</a>
       </div>
       <div class="col">
         <p><Strong>SERVICES</Strong></p>

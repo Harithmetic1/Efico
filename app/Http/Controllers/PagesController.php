@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\MailingList;
 
 class PagesController extends Controller
 {
@@ -30,6 +31,24 @@ class PagesController extends Controller
     public function news()
     {
         return view('template.news');
+    }
+    public function faqs()
+    {
+        return view('template.faqs');
+    }
+    public function pay()
+    {
+        return view('template.payment');
+    }
+    public function subscribe(Request $request)
+    {
+        $email = $request->input('email');
+
+        $user = new MailingList;
+        $user->email = $email;
+        $user->save();
+
+        return back()->with('success', 'Subscription Successful');
     }
 
     /**

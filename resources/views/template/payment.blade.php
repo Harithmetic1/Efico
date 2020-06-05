@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Efico - Registration</title>
-    <link rel="stylesheet" href="./assets/css/index.css">
-    <link rel="stylesheet" href="./assets/css/form.css">
+    <link rel="stylesheet" href="{{ asset('template/assets/css/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('template/assets/css/form.css') }}">
 </head>
 <body>
     <div class="top__bg flex col">
         <header class="flex row">
             <div class="logo flex col">
-                <img src="./assets/img/efico_logo.svg" alt="">
+                <img src="{{ asset('template/assets/img/efico_logo.svg') }}" alt="">
                 <p>your education will make sense</p>
             </div>
             <nav id="nav" class="flex row">
@@ -24,22 +24,22 @@
                 </div>
                 <ul class="flex row">
                     <li>
-                        <a href="./index.html">home</a>
+                        <a href="/">home</a>
                     </li>
                     <li>
-                        <a href="./about.html">about</a>
+                        <a href="/about">about</a>
                     </li>
                     <li>
-                        <a href="./contact.html">contact us</a>
+                        <a href="/contact">contact us</a>
                     </li>
                     <li>
-                        <a href="./services.html">services</a>
+                        <a href="/services">services</a>
                     </li>
                     <li>
-                        <a href="./news.html">news</a>
+                        <a href="/news">news</a>
                     </li>
                     <li>
-                        <a href="./faqs">faqs</a>
+                        <a href="/faqs">faqs</a>
                     </li>
                 </ul>
             </nav>
@@ -96,23 +96,23 @@
             <h1>follow us</h1>
             <div class="flex row">
                 <li>
-                    <a href="twitter-link"><img src="./assets/img/twitter.svg" alt=""></a>
+                    <a href="twitter-link"><img src="{{ asset('template/assets/img/twitter.svg') }}" alt=""></a>
                 </li>
                 <li>
-                    <a href="twitter-link"><img src="./assets/img/ig.svg" alt=""></a>
+                    <a href="twitter-link"><img src="{{ asset('template/assets/img/ig.svg') }}" alt=""></a>
                 </li>
                 <li>
-                    <a href="twitter-link"><img src="./assets/img/fb.svg" alt=""></a>
+                    <a href="twitter-link"><img src="{{ asset('template/assets/img/fb.svg') }}" alt=""></a>
                 </li>
                 <li>
-                    <a href="twitter-link"><img src="./assets/img/youtube.svg" alt=""></a>
+                    <a href="twitter-link"><img src="{{ asset('template/assets/img/youtube.svg') }}" alt=""></a>
                 </li>
                 <li>
-                    <a href="twitter-link"><img src="./assets/img/linkedin.svg" alt=""></a>
+                    <a href="twitter-link"><img src="{{ asset('template/assets/img/linkedin.svg') }}" alt=""></a>
                 </li>
             </div>
         </ul>
     </footer>
-    <script src="./assets/js/index.js"></script>
+    <script src="{{ asset('template/assets/js/index.js') }}"></script>
 </body>
 </html>

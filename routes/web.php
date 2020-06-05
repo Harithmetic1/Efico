@@ -18,6 +18,9 @@ Route::get('/about', 'PagesController@about');
 Route::get('/contact', 'PagesController@contact');
 Route::get('/services', 'PagesController@services');
 Route::get('/news', 'PagesController@news');
+Route::get('/faqs', 'PagesController@faqs');
+Route::get('/pay', 'PagesController@pay');
+Route::post('/subscribe', 'PagesController@subscribe');
 
 Auth::routes();
 

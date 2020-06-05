@@ -40,7 +40,7 @@
                         <a href="/news">news</a>
                     </li>
                     <li>
-                        <a href="./faqs.html">faqs</a>
+                        <a href="/faqs">faqs</a>
                     </li>
                 </ul>
             </nav>
