@@ -10,7 +10,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark py-2" style="background-color: #3c185b; width: 100%; margin-left: 0; color: white;" >
         <a class="navbar-brand" href="/">
-        <img src="logo.png" width="70" height="30" alt="" loading="lazy">
+        <img src="{{ asset('template/logo.png') }}" width="70" height="30" alt="" loading="lazy">
         </a>
         <button class="navbar-toggler but" style="color: white;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -30,23 +30,9 @@
       <div class="container-fluid first" style="background-color: #3c185b;">
         <h2 class="text-light p-4 py-5 mb-5 eficoN" >Get the latest News and Articles about Efico and the Educational World</h2>
       </div>
-      <div class="container py-4 mx-auto">    
-          <div class="card card-deck mb-3 mx-auto" style="max-width: 90%;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="{{ asset('template/Business_SVG 2.png') }}" class="card-img" alt="...">
-                  </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eum quae sit doloribus voluptates modi! Nam dolore ipsum voluptatem, culpa delectus eos dignissimos labore deleniti necessitatibus deserunt, atque nisi architecto.</p>
-                  <a href="#" class="card-link">More</a>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>      
-            </div>
-          </div>
-          <br>
+      <div class="container py-4 mx-auto" id="app">
+          <news></news>   
+          {{-- <br>
           <div class="card card-deck mb-3 mx-auto mt-3" style="max-width: 90%; margin-top: 20%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -81,7 +67,7 @@
               </div>
               
             </div>
-          </div>
+          </div> --}}
       </div>
       <div class="container-fluid footer py-5 " style="background-color: #3c185b; text-align: center; color: white;">
           <div class="row ">
@@ -109,6 +95,7 @@
           </div>
       </div>
 </body>
+<script src="{{ asset('js/app.js') }}"></script>
 <script src="https://kit.fontawesome.com/dc7f1f050e.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

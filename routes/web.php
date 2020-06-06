@@ -21,6 +21,7 @@ Route::get('/news', 'PagesController@news');
 Route::get('/faqs', 'PagesController@faqs');
 Route::get('/registration', 'PagesController@register');
 Route::post('/subscribe', 'PagesController@subscribe');
+Route::post('/new/admin', 'PagesController@makeAdmin');
 
 Auth::routes();
 
