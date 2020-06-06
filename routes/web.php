@@ -22,6 +22,7 @@ Route::get('/faqs', 'PagesController@faqs');
 Route::get('/registration', 'PagesController@register');
 Route::post('/subscribe', 'PagesController@subscribe');
 Route::post('/new/admin', 'PagesController@makeAdmin');
+Route::post('/new/training', 'PagesController@newTraining');
 
 Auth::routes();
 

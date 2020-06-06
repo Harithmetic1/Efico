@@ -386,22 +386,21 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="tr-shadow">
-                                            <td>Training Name</td>
-                                            <td>Number Of Members</td>
-                                            <td class="desc">Training Price</td>
-                                            <td>
-                                                <div class="table-data-feature">
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                        <i class="zmdi zmdi-edit"></i>
-                                                    </button>
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                                        <i class="zmdi zmdi-delete"></i>
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="spacer"></tr>
+                                        @foreach($trainings as $training)
+                                            <tr class="tr-shadow">
+                                                <td>{{ $training->name }}</td>
+                                                <td>{{ count($training->trainee) }}</td>
+                                                <td>{{ $training->price }}</td>
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
+                                                            <i class="zmdi zmdi-delete"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>
@@ -424,9 +423,15 @@
                         <div class="modal-body">
                             <form action="/new/training" method="POST">
                                 @csrf
+                                <div class="form-group">
+                                    <input type="text" name="name" required="" class="form-control" placeholder="Training Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="price" required="" class="form-control" placeholder="Training Price">
+                                </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                    <button type="button" class="btn btn-primary">Confirm</button>
+                                    <button type="submit" class="btn btn-primary">Confirm</button>
                                 </div>
                             </form>
                         </div>

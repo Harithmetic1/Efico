@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\MailingList;
 use Illuminate\Support\Facades\Hash;
 use App\User;
+use App\Training;
 
 class PagesController extends Controller
 {
@@ -74,6 +75,20 @@ class PagesController extends Controller
                 return back();
             }
         }
+
+        return back();
+    }
+    public function newTraining(Request $request)
+    {
+        $name = $request->input('name');
+        $price = $request->input('price');
+        $cover_image = 'business.png';
+
+        $training = new Training;
+        $training->price = $price;
+        $training->name = $name;
+        $training->cover_image = $cover_image;
+        $training->save();
 
         return back();
     }
