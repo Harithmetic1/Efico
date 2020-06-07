@@ -22,7 +22,11 @@ Route::get('/faqs', 'PagesController@faqs');
 Route::get('/registration', 'PagesController@register');
 Route::post('/subscribe', 'PagesController@subscribe');
 Route::post('/new/admin', 'PagesController@makeAdmin');
+Route::post('/new/news', 'PagesController@makeNews');
 Route::post('/new/training', 'PagesController@newTraining');
+Route::post('/training/register', 'PagesController@trainingReg');
+Route::get('/delete/news/{id}', 'PagesController@deleteNews');
+Route::get('/delete/training/{id}', 'PagesController@deleteTraining');
 
 Auth::routes();
 

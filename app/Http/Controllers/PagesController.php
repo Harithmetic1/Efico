@@ -6,7 +6,10 @@ use Illuminate\Http\Request;
 use App\MailingList;
 use Illuminate\Support\Facades\Hash;
 use App\User;
+use App\News;
 use App\Training;
+use App\Trainee;
+use Illuminate\Support\Facades\Auth;
 
 class PagesController extends Controller
 {
@@ -17,7 +20,8 @@ class PagesController extends Controller
      */
     public function index()
     {
-        return view('template.index');
+        $trainings = Training::orderBy('created_at', 'desc')->paginate(5);
+        return view('template.index')->with('trainings', $trainings);
     }
     public function about()
     {
@@ -41,7 +45,8 @@ class PagesController extends Controller
     }
     public function register()
     {
-        return view('template.payment');
+        $trainings = Training::orderBy('name', 'asc')->get();
+        return view('template.payment')->with('trainings', $trainings);
     }
     public function subscribe(Request $request)
     {
@@ -89,6 +94,52 @@ class PagesController extends Controller
         $training->name = $name;
         $training->cover_image = $cover_image;
         $training->save();
+
+        return back();
+    }
+    public function trainingReg(Request $request)
+    {
+        $name = $request->input('full_name');
+        $email = $request->input('email');
+        $training = $request->input('training');
+
+        $trainee = new Trainee;
+        $trainee->fullname = $name;
+        $trainee->email = $email;
+        $trainee->training_id = $training;
+        $trainee->save();
+
+        return back();
+    }
+    public function makeNews(Request $request)
+    {
+        $title = $request->input('title');
+        $body = $request->input('body');
+        $author = Auth::user()->name;
+        $cover_image = 'Business_SVG 2.png';
+
+        $news = new News;
+        $news->title = $title;
+        $news->body = $body;
+        $news->cover_image = $cover_image;
+        $news->author = $author;
+        $news->save();
+
+        return back();
+    }
+    public function deleteNews($id)
+    {
+        $news = News::find($id);
+
+        $news->delete();
+
+        return back();
+    }
+    public function deleteTraining($id)
+    {
+        $training = Training::find($id);
+
+        $training->delete();
 
         return back();
     }

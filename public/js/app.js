@@ -37527,7 +37527,7 @@ var render = function() {
           },
           [
             _c("div", { staticClass: "row no-gutters" }, [
-              _c("div", { staticClass: "col-md-4" }),
+              _vm._m(0, true),
               _vm._v(" "),
               _c("div", { staticClass: "col-md-8" }, [
                 _c("div", { staticClass: "card-body" }, [
@@ -37539,15 +37539,9 @@ var render = function() {
                     _vm._v(_vm._s(eachNews.body))
                   ]),
                   _vm._v(" "),
-                  _c(
-                    "a",
-                    { staticClass: "card-link", attrs: { href: "/news/" } },
-                    [_vm._v("More")]
-                  ),
-                  _vm._v(" "),
                   _c("p", { staticClass: "card-text" }, [
                     _c("small", { staticClass: "text-muted" }, [
-                      _vm._v(_vm._s(eachNews.created_at))
+                      _vm._v(_vm._s(eachNews.author))
                     ])
                   ])
                 ])
@@ -37625,7 +37619,19 @@ var render = function() {
     2
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-4" }, [
+      _c("img", {
+        staticClass: "card-img",
+        attrs: { src: "template/Business_SVG 2.png", alt: "..." }
+      })
+    ])
+  }
+]
 render._withStripped = true
 
 

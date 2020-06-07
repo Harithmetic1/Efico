@@ -3,14 +3,14 @@
 		<div class="card card-deck mb-3 mx-auto" style="max-width: 90%;" v-for="eachNews in news" v-bind:key="eachNews.id">
 	        <div class="row no-gutters">
 	            <div class="col-md-4">
-	                <!-- <img src="{{ asset('template/Business_SVG 2.png') }}" class="card-img" alt="..."> -->
+	                <img src="template/Business_SVG 2.png" class="card-img" alt="...">
 	            </div>
 	          	<div class="col-md-8">
 		            <div class="card-body">
 			              <h5 class="card-title">{{ eachNews.title }}</h5>
 			              <p class="card-text">{{ eachNews.body }}</p>
-			              <a href="/news/" class="card-link">More</a>
-			              <p class="card-text"><small class="text-muted">{{ eachNews.created_at }}</small></p>
+			              <!-- <a href="/news/" class="card-link">More</a> -->
+			              <p class="card-text"><small class="text-muted">{{ eachNews.author }}</small></p>
 		            </div>
 	          	</div>      
 	        </div>

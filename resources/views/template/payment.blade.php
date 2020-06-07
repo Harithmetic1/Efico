@@ -56,7 +56,8 @@
                     </p>
                 </div>
                 </div>
-                <form action="" class="right">
+                <form action="/training/register" class="right" method="POST">
+                    @csrf
                     <fieldset>
                         <div class="fields-container flex col">
                                 <legend>Register</legend>
@@ -70,9 +71,14 @@
                              </div>
                              <div class="field flex col">
                                     <label for="training">Training</label>
-                                    <select name="training" id="training"></select>     
+                                    <select name="training" id="training">
+                                        <option value=""></option>
+                                        @foreach($trainings as $training)
+                                            <option value="{{ $training->id }}">{{ $training->name }}</option>
+                                        @endforeach
+                                    </select>     
                              </div>
-                             <button>Register</button>
+                             <button type="submit">Register</button>
                         </div>
                     </fieldset>
                 </form>

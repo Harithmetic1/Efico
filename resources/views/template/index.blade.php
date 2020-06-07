@@ -63,27 +63,16 @@
     <section class="section-one mission flex col">
         <h1>our mission</h1>
         <ul class="flex row">
-            <li class="flex col">
-                <span>Training</span>
-                <figure>
-                    <figcaption hidden>Image illustrating Training</figcaption>
-                    <img src="{{ asset('template/assets/img/business.png') }}" alt="training illustration">
-                </figure>
-            </li>
-            <li class="flex col">
-                <span>Training</span>
-                <figure>
-                    <figcaption hidden>Image illustrating Training</figcaption>
-                    <img src="{{ asset('template/assets/img/business.png') }}" alt="training illustration">
-                </figure>
-            </li>
-            <li class="flex col">
-                <span>Training</span>
-                <figure>
-                    <figcaption hidden>Image illustrating Training</figcaption>
-                    <img src="{{ asset('template/assets/img/business.png') }}" alt="training illustration">
-                </figure>
-            </li>
+            @foreach($trainings as $training)
+                <li class="flex col">
+                    <span>{{ $training->name }}</span>
+                    <figure>
+                        <figcaption hidden>Image illustrating Training</figcaption>
+                        <img src="{{ asset('template/assets/img/business.png') }}" alt="training illustration">
+                    </figure>
+                    <span style="margin-top: 10px;">${{ $training->price }}</span>
+                </li>
+            @endforeach
         </ul>
     </section>
     <section class="section-two achievements">
