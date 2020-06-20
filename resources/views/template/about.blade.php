@@ -157,11 +157,11 @@
     <div class="col">
         <p><Strong>FOLLOW US</Strong></p>
     
-        <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="text-light"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
-        <a href="#" class="text-light"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/EficoResources" class="text-light"><i class="fab fa-twitter"></i></a>
+        <a href="http://instagram.com/efico_resources" class="text-light"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100044491054245" class="text-light"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.youtube.com/channel/UC4BCMxcqIsr_ZBBafiAWV4g" class="text-light"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/company/efico-resources" class="text-light"><i class="fab fa-linkedin"></i></a>
     
     </div>
   </div>
