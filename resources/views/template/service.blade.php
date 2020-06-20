@@ -104,12 +104,13 @@
           <br>
 <br>
 <br/>
-<div class="container-fluid footer py-5 ">
+<footer>
+<div class="container-fluid footer py-5">
   <div class="row ">
       <div class="col">
           <p><Strong>QUICK LINKS</Strong></p>
-          <a href="/about" class="text-light">About Us</a> <br>
-          <a href="/news" class="text-light">Newsletter</a>
+          <a href="#" class="text-light">About Us</a> <br>
+          <a href="#" class="text-light">Newsletter</a>
       </div>
       <div class="col">
         <p><Strong>SERVICES</Strong></p>
@@ -122,16 +123,19 @@
     <div class="col">
         <p><Strong>FOLLOW US</Strong></p>
     
-        <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="text-light"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
-        <a href="#" class="text-light"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/EficoResources" class="text-light"><i class="fab fa-twitter"></i></a>
+        <a href="http://instagram.com/efico_resources" class="text-light"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100044491054245" class="text-light"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.youtube.com/channel/UC4BCMxcqIsr_ZBBafiAWV4g" class="text-light"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/company/efico-resources" class="text-light"><i class="fab fa-linkedin"></i></a>
     
     </div>
-
   </div>
-</div>      
+</div>
+<div class="container-fluid" style=" background-color: #3c185b; text-align: center; color: white; height: 45px; bottom: 0;">
+ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </p>
+</div>
+</footer>      
 </body>
 <script src="https://kit.fontawesome.com/dc7f1f050e.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
