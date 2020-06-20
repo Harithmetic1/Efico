@@ -1,353 +1,178 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>About Us</title>
-    <link rel="icon" href="{{ asset('template/img/favicon.png') }}">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{ asset('template/css/bootstrap.min.css') }}">
-    <!-- animate CSS -->
-    <link rel="stylesheet" href="{{ asset('template/css/animate.css') }}">
-    <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="{{ asset('template/css/owl.carousel.min.css') }}">
-    <!-- themify CSS -->
-    <link rel="stylesheet" href="{{ asset('template/css/themify-icons.css') }}">
-    <!-- font awesome CSS -->
-    <link rel="stylesheet" href="{{ asset('template/css/all.css') }}">
-    <!-- flaticon CSS -->
-    <link rel="stylesheet" href="{{ asset('template/css/flaticon.css') }}">
-    <!-- magnific popup CSS -->
-    <link rel="stylesheet" href="{{ asset('template/css/magnific-popup.css') }}">
-    <!-- nice select CSS -->
-    <link rel="stylesheet" href="{{ asset('template/css/nice-select.css') }}">
-    <!-- swiper CSS -->
-    <link rel="stylesheet" href="{{ asset('template/css/slick.css') }}">
-    <!-- style CSS -->
-    <link rel="stylesheet" href="{{ asset('template/css/style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.first{
+    background-color: #3c185b;
+    padding: 45px 45px;
+    color: white;
+    text-align: center;
+}
+.footer{
+    background-color: #3c185b;
+    text-align: center;
+    color: white;
+}
+
+</style>
 <body>
-    <!--::header part start::-->
-    <header class="main_menu home_menu">
+    <nav class="navbar navbar-expand-lg navbar-dark z-depth-0" style="background-color: #3c185b; width: 100%; margin-left: 0; color: white;" >
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="/">
-        <img src="logo.png" width="70" height="30" margin-left="3%" alt="" loading="lazy">
+        <a class="navbar-brand" href="#">
+        <img src="https://res.cloudinary.com/dox2gqczu/image/upload/v1592465124/logo_iyyhfa.png" width="60" height="20" alt="" loading="lazy">
         </a>
-        <button class="navbar-toggler" style="color: white;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler but" style="color: white;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-                        <div class="collapse navbar-collapse main-menu-item justify-content-end"
-                            id="navbarSupportedContent">
-                            <ul class="navbar-nav align-items-center">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/about">About Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/contact">Contact Us</a>
-                                </li>
-                                <!-- This Should Contain a PDF link About Efico  -->
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/faqs">Learn More</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
+        <div class="collapse navbar-collapse up"  id="navbarSupportedContent" >
+          <ul class="navbar-nav ml-auto">
+          <div class="navbar-nav" >
+              <a class="nav-item nav-link" href="index.html">HOME</a>
+              <a class="nav-item nav-link active" href="aboutm.html">ABOUT US</a>
+              <a class="nav-item nav-link" href="contact.html">CONTACT US</a>
+              <a class="nav-item nav-link" href="service.html">SERVICES</a>
+              <a class="nav-item nav-link" href="#">NEWS <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="faqs.html">FAQS</a>
             </div>
+            </ul>
         </div>
-    </header>
-    <!-- Header part end-->
-
-    <!-- breadcrumb start-->
-    <section class="breadcrumb breadcrumb_bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb_iner">
-                        <div class="breadcrumb_iner_item text-center">
-                            <h2>about us</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </nav>
+      <div class="container-fluid first">
+          <h4>Who We Are</h4>
+      </div>
+      <div class="container mt-5">
+      <img src="https://res.cloudinary.com/dox2gqczu/image/upload/v1592519083/EficoPic_dsl2tl.png" class="img-fluid rounded mx-auto d-block" alt="Efico" style="width: 60%; height: 60%;">
+    </div>
+    <br>
+    <div class="container">
+    <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Our Mission</h4>
+          <p class="card-text">We use a personalized self-assessment test to help undergraduates know themselves and channel skills in the Direction of their Natural abilities.</p>
         </div>
-    </section>
-    <!-- breadcrumb start-->
-    <!-- about part end-->
-    <section class="about_us padding_top">
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-lg-6">
-                    <div class="about_us_img">
-                        <img src="{{ asset('template/img/top_service.png') }}" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about_us_text">
-                        <h5>
-                            2019<br><span>since</span>
-                        </h5>
-                        <h2>Our Mission</h2>                            
-                        <p>We use our personalized self-assement test to help undergraduates know 
-                            themselves and channel skills in the Direction of their Natural talent. 
-                        </p>
-                        <h2>Our Vision</h2>                            
-                        <p>To churn out exceptional graduates every year, and 
-                            instilling Efico in the minds on every undergraduate.
-                        </p>
-                        <h2>Our Purpose</h2>                            
-                        <p>We connect the significances of the academia in relation to the industry, 
-                            thereby making undergraduates truly successful upon graduation.
-                        </p>
-                        <div class="banner_item">
-                            <div class="single_item">
-                                <h2> <span class="count">500</span>+</h2>
-                                <h5>We have over 500 Student Trained in Nigeria Universities</h5>
-                            </div>
-                            <div class="single_item">
-                                <h2><span class="count">40</span>+</h2>
-                                <h5>We have over 40 Student Ambassadors from Various Universities Across Nigeria</h5>
-                            </div>
-                            <div class="single_item">
-                                <h2><span class="count">30</span>+</h2>
-                                <h5>We have Reached out to over 30 Private and Public Universities in Nigeria.</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="col-lg-12">
-                    <div class="text-center about_btn">
-                        <h2>Our Core Values</h2> <br>
-                        <p class="btn_3 ">E-efficient</p> <p> We are efficient, we always maximize your potential for that personalized skill </p>
-                        <p class="btn_3 ">F- Faithful</p> <p>We are faithful, we adhere firmly to the course of making you exceptional after graduation.</p>
-                        <p class="btn_3 ">I-integrity</p> <p> We stand as an entity of integrity, we are true to our word.</p>
-                        <p class="btn_3 ">C- communication</p><p> We love you to communicate, because that way, we can serve you better. </p>
-                        <p class="btn_3 ">O-organization</p> <p>We love you to communicate, because that way, we can serve you better.</p>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Our Vision</h4>
+          <p class="card-text">To churn out exceptional graduates every year, and by extension, instilling Efico in the minds of every undergraduate.</p>
         </div>
-    </section>
-    <!-- about part end-->
-
-    <!--::passion part start::-->
-    <section class="passion_part passion_section_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-5 col-md-8">
-                    <div class="section_tittle">
-                        <h2>Our Team</h2>
-                        <p>Meet Efico Directors and Team Members </p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-lg-4 col-xl-4">
-                    <div class="single-home-passion">
-                        <div class="card">
-                            <img src="{{ asset('template/img/passion/passion_1.png') }}" class="card-img-top" alt="blog">
-                            <div class="card-body">
-                                <a href="#">
-                                    <h5 class="card-title">Directors</h5>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-sm-6 col-lg-4 col-xl-4">
-                    <div class="single-home-passion">
-                        <div class="card">
-                            <img src="{{ asset('template/img/passion/passion_3.png') }}" class="card-img-top" alt="blog">
-                            <div class="card-body">
-                                <a href="#">
-                                    <h5 class="card-title"> Team Members </h5>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-sm-6 col-lg-4 col-xl-4">
-                    <div class="single-home-passion">
-                        <div class="card">
-                            <img src="{{ asset('template/img/passion/passion_3.png') }}" class="card-img-top" alt="blog">
-                            <div class="card-body">
-                                <a href="#">
-                                    <h5 class="card-title">Team Members</h5>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Our Purpose</h4>
+          <p class="card-text">We connect the significances of the academia in relation to the industry, thereby making undergraduates truly successful upon graduation.</p>
         </div>
-    </section>
-    <!--::passion part end::-->
-
-     <!--::our client part start::-->
-     <section class="client_part padding_bottom">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6">
-                    <div class="section_tittle text-center">
-                        <!-- I dont know what to put there you can Change the title -->
-                        <h2>EFICO Universities Based</h2>  
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <div class="client_logo owl-carousel">
-                        <div class="single_client_logo">
-                            <img src="{{ asset('template/img/client_logo/Logo_1.png') }}" alt="">
-                        </div>
-                        <div class="single_client_logo">
-                            <img src="{{ asset('template/img/client_logo/Logo_2.png') }}" alt="">
-                        </div>
-                        <div class="single_client_logo">
-                            <img src="{{ asset('template/img/client_logo/Logo_3.png') }}" alt="">
-                        </div>
-                        <div class="single_client_logo">
-                            <img src="{{ asset('template/img/client_logo/Logo_4.png') }}" alt="">
-                        </div>
-                        <div class="single_client_logo">
-                            <img src="{{ asset('template/img/client_logo/Logo_5.png') }}" alt="">
-                        </div> 
-                        <div class="single_client_logo">
-                            <img src="{{ asset('template/img/client_logo/Logo_6.jpg') }}" alt="">
-                        </div>
-                        <div class="single_client_logo">
-                            <img src="{{ asset('template/img/client_logo/Logo_7.jpg') }}" alt="">
-                        </div>
-                        <div class="single_client_logo">
-                            <img src="{{ asset('template/img/client_logo/Logo_8.jpg') }}" alt="">
-                        </div>
-                        <div class="single_client_logo">
-                            <img src="{{ asset('template/img/client_logo/Logo_9.jpg') }}" alt="">
-                        </div>
-                        <div class="single_client_logo">
-                            <img src="{{ asset('template/img/client_logo/Logo_10.jpg') }}" alt="">
-                        </div>
-                        <div class="single_client_logo">
-                            <img src="{{ asset('template/img/client_logo/Logo_11.jpg') }}" alt="">
-                        </div>
-                        <div class="single_client_logo">
-                            <img src="{{ asset('template/img/client_logo/Logo_12.png') }}" alt="">
-                        </div>
-                        <div class="single_client_logo">
-                            <img src="{{ asset('template/img/client_logo/Logo_13.jpg') }}" alt="">
-                        </div>
-                        <div class="single_client_logo">
-                            <img src="{{ asset('template/img/client_logo/Logo_14.jpg') }}" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+    <br>
+    <div class="container text-center">
+      <h4>Subscribe to our Youtube Channel</h4>
+      <br>
+      <iframe width="90%" height="300" src="https://www.youtube.com/embed/63RNNlRFHL0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <br>
+    <div class="container text-center">
+        <h4 class="text-center">What We Stand For</h4>
+        <p class="font-weight-lighter">Click each button to know more</p>
+        <br>
+        <button type="button" class="btn text-center" style="background-color: #3c185b; color: white; width: 155px;" data-toggle="collapse" data-target="#core1">E-Efficient</button>
+        <div id="core1" class="collapse">
+            We are efficient, we always maximize your potential for that personalized skill
         </div>
-    </section>
-    <!--::our client part end::-->
-
-    <!--::footer_part start::-->
-    <footer class="footer_part">
-        <div class="container">
-            <div class="row justify-content-around">
-                <div class="col-sm-6 col-lg-2">
-                    <div class="single_footer_part">
-                        <h4>Quick link</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/about">About Us</a></li>
-                            <li><a href="/contact">Contact Us</a></li>
-                            <li><a href="#">Learn More</a></li>
-                            <li><a href="#">Our Programs</a></li>
-                        </ul>
-                    </div>
-                </div> 
-                <!-- Subcribe for new letter start-->
-                <div class="col-sm-6 col-lg-3">
-                    <div class="single_footer_part">
-                        <h4>Newsletter</h4>
-                        <p>Subscribe to Our Newsletter to keep you Updated</p>
-                        <div id="mc_embed_signup">
-                            <form action="/subscribe" method="POST" class="subscribe_form relative mail_part">
-                                @csrf
-                                <input type="email" name="email" placeholder="Email Address"
-                                    class="placeholder hide-on-focus" required="">
-                                <button type="submit" class="email_icon newsletter-submit button-contactForm"><i
-                                        class="far fa-paper-plane"></i></button>
-                                <div class="mt-10 info"></div>
-                            </form>
-                            @if($success ?? '')
-                                {{ $success }}
-                            @endif
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="copyright_text">
-                        <p>
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="footer_icon social_icon">
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="single_social_icon"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" class="single_social_icon"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" class="single_social_icon"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="#" class="single_social_icon"><i class="fab fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <br>
+        <button type="button" class="btn text-center mt-3" style="background-color: #3c185b; color: white; width: 155px;" data-toggle="collapse" data-target="#core2">F-Faithful</button>
+        <div id="core2" class="collapse">
+            We are faithful, we adhere firmly to the cause of making you exceptional after graduation.
         </div>
-    </footer>
-    <!--::footer_part end::-->
-
-    <!-- jquery plugins here-->
-
-    <script src="{{ asset('template/js/jquery-1.12.1.min.js') }}"></script>
-    <!-- popper js -->
-    <script src="{{ asset('template/js/popper.min.js') }}"></script>
-    <!-- bootstrap js -->
-    <script src="{{ asset('template/js/bootstrap.min.js') }}"></script>
-    <!-- easing js -->
-    <script src="{{ asset('template/js/jquery.magnific-popup.js') }}"></script>
-    <!-- swiper js -->
-    <script src="{{ asset('template/js/swiper.min.js') }}"></script>
-    <script src="{{ asset('template/js/wow.min.js') }}"></script>
-    <script src="{{ asset('template/js/jquery.smooth-scroll.min.js') }}"></script>
-    <!-- swiper js -->
-    <script src="{{ asset('template/js/masonry.pkgd.js') }}"></script>
-    <!-- particles js -->
-    <script src="{{ asset('template/js/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('template/js/jquery.nice-select.min.js') }}"></script>
-    <!-- swiper js -->
-    <script src="{{ asset('template/js/slick.min.js') }}"></script>
-    <script src="{{ asset('template/js/jquery.counterup.min.js') }}"></script>
-    <script src="{{ asset('template/js/waypoints.min.js') }}"></script>
-    <script src="{{ asset('template/js/countdown.jquery.min.js') }}"></script>
-    <!-- contact js -->
-    {{-- <script src="{{ asset('template/js/jquery.ajaxchimp.min.js') }}"></script>
-    <script src="{{ asset('template/js/jquery.form.js') }}"></script>
-    <script src="{{ asset('template/js/jquery.validate.min.js') }}"></script>
-    <script src="{{ asset('template/js/mail-script.js') }}"></script>
-    <script src="{{ asset('template/js/contact.js') }}"></script> --}}
-    <!-- custom js -->
-    <script src="{{ asset('template/js/custom.js') }}"></script>
+        <br>
+        <button type="button" class="btn text-center mt-3" style="background-color: #3c185b; color: white; width: 155px;" data-toggle="collapse" data-target="#core3">I-Integrity</button>
+        <div id="core3" class="collapse">
+            We stand as an entity of integrity, we are true to our words.
+        </div>
+        <br>
+        <button type="button" class="btn text-center mt-3" style="background-color: #3c185b; color: white; width: 155px;" data-toggle="collapse" data-target="#core4">C-Communication</button>
+        <div id="core4" class="collapse">
+            We love you to communicate, because that way, we can serve you better.
+        </div>
+        <br>
+        <button type="button" class="btn text-center mt-3" style="background-color: #3c185b; color: white; width: 155px;" data-toggle="collapse" data-target="#core5">O-Organisation</button>
+        <div id="core5" class="collapse">
+            We hold organisation in high esteem, since it is one of the ways to follow through and track your progress.
+        </div>
+    </div>
+    <br>
+    <div class="container mt-5">
+        <h3>Our Team</h3>
+        <p class="font-weight-lighter">Meet The Team and The Founding Members</p>
+        <div class="row">
+            <div class="col col-12 col-lg-6">
+        <img src="https://res.cloudinary.com/dox2gqczu/image/upload/v1592465743/EficoDirectors_i151ti.jpg" class="image-fluid rounded mx-auto d-block materialboxed" style="width: 80%; height: 80%;" alt="Efico Directors">
+        <br>
+        <h4 class="ml-3"><Strong>The Team</Strong></h4>
+    </div>
+    <div class="col col-12 col-lg-6 mt-5 mt-lg-0">
+<img src="https://res.cloudinary.com/dox2gqczu/image/upload/v1592465743/EficoTeam_pnmad2.jpg" class="image-fluid rounded mx-auto d-block materialboxed" style="width: 80%; height: 80%;" alt="Efico Team">
+<br>
+<h4 class="ml-3"><Strong>The Founding Members</Strong></h4>
+</div>
+    <div class="col col-12 col-lg-6 mt-5 mt-lg-0">
+<img src="https://res.cloudinary.com/dox2gqczu/image/upload/v1592650392/David2_midbbr.jpg" class="image-fluid rounded mx-auto d-block " style="width: 80%; height: 70%;" alt="Efico Team">
+<br>
+<p class="font-weight-bold">The founder in a conference, abolishing the “school is a scam” narrative</p>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<footer>
+<div class="container-fluid footer py-5">
+  <div class="row ">
+      <div class="col">
+          <p><Strong>QUICK LINKS</Strong></p>
+          <a href="#" class="text-light">About Us</a> <br>
+          <a href="#" class="text-light">Newsletter</a>
+      </div>
+      <div class="col">
+        <p><Strong>SERVICES</Strong></p>
+        
+        <a href="#" class="text-light">Career talks</a> <br>
+        <a href="#" class="text-light">Internship</a> <br>
+        <a href="#" class="text-light">Scholarship</a>
+        
+    </div>
+    <div class="col">
+        <p><Strong>FOLLOW US</Strong></p>
+    
+        <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-light"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="text-light"><i class="fab fa-linkedin"></i></a>
+    
+    </div>
+  </div>
+</div>
+<div class="container-fluid" style=" background-color: #3c185b; text-align: center; color: white; height: 45px; bottom: 0;">
+ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </p>
+</div>
+</footer>
 </body>
-
+<script src="https://kit.fontawesome.com/dc7f1f050e.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </html>
